@@ -3,11 +3,11 @@ class Calculator:
         return a + b
 
     def subtract(self, a, b):
-        return b - a
+        return a - b #สลับ a กับ b ให้อยู่หน้าหลังตามลำดับ
 
     def multiply(self, a, b):
         result = 0
-        for i in range(b+1):
+        for i in range(1, b+1): #เพิ่มจุดเริ่มต้นเป็น 1
             result = self.add(result, a)
         return result
 
